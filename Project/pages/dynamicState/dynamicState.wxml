@@ -1,0 +1,48 @@
+<view class="view_box">
+  <view class="view_content">
+    <textarea maxlength="10000" value="{{content}}" bindinput="getContent" placeholder="分享新鲜事~" class="text_content"></textarea>
+  </view>
+  <view class="view_foot">
+    <view class="view_addImage" bindtap="clickUpload">
+      <view class="view_addImage_block">
+        <image class="image_pic" src="../../images/picture.png"></image>
+        <image class="image_add" src="../../images/add_two.png"></image>
+        <text class="text_uploading">添加图片（最多9张）</text>
+      </view>
+    </view>
+    <view bindtap="clickIssue" class="view_issue">
+      <view class="view_issue_block">
+        <image class="image_upload" src="../../images/upload.png"></image>
+        <text class="text_uploading" style="font-size:15px;font-weight: 800;">确认发布</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="view_anonymity" wx:if="{{isAnonymity}}"> 
+  <view class="view_anonymity_text">
+    是否匿名
+  </view>
+  <view bindtap="clickSwitch"  class="view_anonymity_switech_box">
+    <view class="view_anonymity_switch {{isClick?'view_anonymity_switch_action':''}}">
+      <view class="view_circle {{isClick?'view_circle_action':''}}"></view>
+    </view>
+  </view>
+</view>
+<view class="view_imageBox">
+  <view  wx:for="{{imageList}}" wx:key="*this" wx:for-item="item" wx:for-index="index"  class="view_imageList" wx:for="{{imageList}}" wx:key="*this" wx:for-index="index" wx:for-item="item">
+    <image mode="aspectFill" class="image_list" src="{{item.path}}"></image>
+  </view>
+</view>
+<view class="view_tab">
+  <view class="view_tab_title">
+    <image class="image_issue" src="../../images/issue.png"></image>
+    <text class="text_uploading text_title">请选择您要发布的消息类型</text>
+  </view>
+  <view class="view_tab_content">
+    <image bindtap="clickAction" data-index="{{index}}" class="image_tab" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="*this" 
+    src="{{item.isAction?item.src_action:item.src}}"></image>
+  </view>
+</view>
+<view wx:if="{{isLoading}}" class="view_loading">
+  <progressBar class="pro_loading"></progressBar>
+</view>

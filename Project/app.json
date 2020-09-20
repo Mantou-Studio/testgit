@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/bazaar/bazaar",
+    "pages/xiaomi/xiaomi",
+    "pages/my/my",
+    "pages/discover/discover",
+    "pages/commentDetails/commentDetails",
+    "pages/dynamicDetails/dynamicDetails",
+    "pages/dataSet/dataSet",
+    "pages/dynamicState/dynamicState",
+    "pages/navigation/navigation"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8cf1d",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/xiaomi/xiaomi",
+      "text": "小秘",
+      "iconPath": "images/xiaomi.png",
+      "selectedIconPath": "images/xiaomi_action.png"
+    },{
+      "pagePath": "pages/bazaar/bazaar",
+      "text": "易宝",
+      "iconPath": "images/bazaar.png",
+      "selectedIconPath": "images/bazaar_action.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "校园广场",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_action.png"
+    },{
+      "pagePath": "pages/discover/discover",
+      "text": "发现",
+      "iconPath": "images/discover.png",
+      "selectedIconPath": "images/discover_action.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my_action.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

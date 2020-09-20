@@ -1,0 +1,37 @@
+.view_male{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(251, 235, 163);
+  position: absolute;
+  float: left;
+}
+.view_female{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(251, 226, 81);
+  position: absolute;
+  float: left;
+  left: 50%;
+}
+.view_male_box,.view_female_box{
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.view_male_box:hover,.view_female_box:hover{
+  background-color: rgb(17, 104, 99);
+}
+.image_male{
+  width: 100%;
+  height: 100%;
+}
+.image_female{
+  width: 100%;
+  height: 100%;
+}

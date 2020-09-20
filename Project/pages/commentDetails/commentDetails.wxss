@@ -1,0 +1,265 @@
+page{
+  background-color: #f2f2f2;
+}
+.view_dynamicState{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.view_dynamicState_title{
+  width: 94%;
+  height: 70px;
+  margin-left: 3%;
+}
+.view_dynamicState_headPortait{
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  float: left;
+  position: relative;
+  top: 10px;
+}
+.view_dynamicState_userInfo{
+  width: 70%;
+  height: 50px;
+  float: left;
+  margin-left: 5px;
+  position: relative;
+  top: 10px;
+}
+.view_dynamicState_name{
+  width: 100%;
+  height: 50%;
+  font-size: 19px;
+  font-weight: 800;
+}
+.view_dynamicState_dateTime{
+  width: 100%;
+  height: 50%;
+  font-size: 13px;
+  line-height: 25px;
+}
+.view_dynamicState_content{
+  width: 94%;
+  margin-left: 3%;
+  height: auto;
+}
+.view_dynamicState_text{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.view_dynamicState_Image{
+  width: 101%;
+  height: auto;
+}
+.image_picture{
+  width: 32.3%;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  display: inline-block;
+  margin-right: 1%;
+  /* background-color: rgb(243, 243, 243); */
+  background-color: #f2f2f2;
+}
+.view_dynamicState_foot{
+  width: 94%;
+  height: 50px;
+  margin-left: 3%;
+  border-top: 1px solid #f2f2f2;
+}
+.image_user{
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+.text_user{
+  width: 120px;
+  height: 100%;
+  line-height: 50px;
+  float: left;
+  margin-left: 2px;
+}
+.view_user_image{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  float: left;
+}
+
+.view_comment{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.view_comment_title{
+  width: 100%;
+  height: 30px;
+}
+.view_comment_box{
+  width: 94%;
+  height: 30px;
+  margin-left: 3%;
+}
+.view_comment_all{
+  width: 90px;
+  height: 28px;
+  border-bottom: 2px solid #f8cf1d;
+  color: #f8cf1d;
+  line-height: 30px;
+  text-align: center;
+}
+.view_comment_content{
+  width: 100%;
+  height: auto;
+}
+.view_comment_box{
+  width: 94%;
+  height: auto;
+  margin-left: 3%;
+}
+.view_comment_box_title{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.view_comment_box_headPortait{
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  position: relative;
+  top:5px;
+  border-radius: 50%;
+  float: left;
+}
+.view_comment_box_userInfo{
+  width: 78%;
+  height: auto;
+  float: left;
+  margin-left: 1%;
+}
+.view_comment_box_name{
+  width: 100%;
+  height: 20px;
+}
+.view_comment_box_dateTime{
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #868686;
+}
+.view_comment_box_praise{
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+.image_praise{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  display: block;
+  float: left;
+}
+.text_zanNum{
+  width: 20px;
+  height:40px;
+  display: block;
+  line-height: 40px;
+  float: left;
+  font-size: 13px;
+}
+.view_comment_box_text{
+  width: 116%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f2f2f2;
+}
+.view_comment_box_reply{
+  width: 116%;
+  height: auto;
+}
+.view_comment_box_reply_title{
+  width: 100%;
+  height: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.view_comment_box_reply_name{
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+.view_comment_box_reply_time,.view_comment_box_reply_who{
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #868686;
+}
+.view_comment_box_reply_text{
+  width: 114%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding:2px;
+}
+.view_review{
+  width: 100%;
+  min-height: 50px;
+  background-color: #f8cf1d;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  height: auto;
+}
+.view_review_input{
+  width: 91%;
+  min-height:30px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 3%;
+  border-radius: 20px;
+  padding-left: 3%;
+  height: auto;
+}
+.input_review{
+  width: 77%;
+  height: 30px;
+  float: left;
+  padding-left: 2%;
+  line-height: 30px;
+}
+.image_icon{
+  width: 9%;
+  height: 30px;
+  float: left;
+}
+/* .image_send{
+  width: 9%;
+  height: 30px;
+  background-color: blueviolet;
+  float: left;
+} */
+.text_send{
+  width: 9%;
+  height: 30px;
+  line-height: 30px;
+}
+.view_iconList{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.image_praise_copy,.image_discuss,.image_collect,.image_share{
+  width: 30px;
+  height: 30px;
+}

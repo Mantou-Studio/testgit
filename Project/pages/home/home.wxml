@@ -1,0 +1,59 @@
+<view>
+  <swiper class="swiper" autoplay="true" circular="true">
+    <swiper-item wx:for="{{imageList}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+      <image class="swiper_image" mode="scaleToFill" src="{{item.src}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="view_padding">
+  <navtab list="{{navtabList}}" bindprogressBar="progressBar" binditemChange="ItemChange" >
+    <block wx:for="{{dynamicState}}" wx:key="id" wx:for-item="list">
+      <view  wx:for="{{list}}" wx:if="{{index<pageNum}}" wx:key="id" wx:for-index="index"   wx:for-item="item" >
+        <view  class="view_listBox" >
+           <view class="view_title">
+          <view bindtap="bindtapDetails" data-index="{{index}}" class="view_headPortrait">
+           <image mode="aspectFill" wx:if="{{item.tab=='树洞'}}" class="headPortrait" src="../../images/tree.png"></image>
+            <image mode="aspectFill" wx:elif="{{item.tab=='#话题'}}" class="headPortrait" src="../../images/anonymity_topic.png"></image>
+            <image mode="aspectFill" wx:else class="headPortrait" src="{{item.isAnonymity?'../../images/anonymity.png':item.headPortait}}"></image>
+          </view>
+          <view class="view_titleContent">
+          <view wx:if="{{item.tab=='树洞'}}" class="view_name">树洞</view>
+          <view wx:elif="{{item.tab=='#话题'}}" class="view_name">#话题</view>
+            <view wx:else  class="view_name">{{item.isAnonymity?'匿名':item.name}}</view>
+            <view class="view_info">
+              <text>{{dateTime[index]}}</text>
+              <text></text>
+            </view>
+          </view>
+        </view>
+        <view class="view_content">
+          <view class="view_text" bindtap="bindtapComment" data-index="{{index}}" >{{item.content}}</view>
+          <view class="view_Image">
+            <image mode="aspectFill" class="view_imageList" bindtap="bindtapPreview" data-array="{{item.cloudImage}}" data-src="{{list}}" src="{{list}}"  wx:for="{{item.cloudImage}}" wx:key="id" wx:for-index="i" wx:for-item="list"></image>
+          </view>
+        </view>
+        <view class="view_foot">
+          <view bindtap="bindtapLike" data-index="{{index}}" class="view_iconList">
+            <image class="image_praise"  src="{{likes[index]?'../../images/praise_action.png':'../../images/praise.png'}}"></image>
+            <text>{{likeSum[index]}}</text>
+          </view>
+          <view class="view_iconList" bindtap="bindtapComment" data-index="{{index}}">
+            <image class="image_discuss" src="../../images/discuss.png" ></image>
+            <text>{{commentNums[index]}}</text>
+          </view>
+          <view bindtap="bindtapCollect" data-index="{{index}}" class="view_iconList">
+            <image class="image_collect" src="{{collects[index]?'../../images/collect_action.png':'../../images/collect.png'}}"></image>
+          </view>
+          <label for="btn_share" class="view_iconList">
+            <image class="image_share" src="../../images/share.png"></image>
+          </label>
+          <button open-type="share" style="display:none" id="btn_share"></button>
+        </view>
+        </view>
+      </view>
+    </block>
+  </navtab>
+</view>
+<view class="view_btnbox">
+  <image bindtap="dynamicState" class="image_add" src="../../images/add.png"></image>
+</view>

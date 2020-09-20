@@ -1,0 +1,14 @@
+<view class="view_box">
+  <scroll-view scroll-x="true" class="view_horizontal" >
+      <view wx:for="{{list}}" bindtap="clickAction" data-index="{{index}}" wx:key="*this" wx:for-index="index" wx:for-item="item" class="view_list">
+        <view class="view_icon">
+          <image class="image_icon" src="{{item.isAction?item.src_action:item.src}}"></image>
+        </view>
+        <view class="view_text {{item.isAction?'action':''}}">{{item.title}}</view>
+      </view>
+  </scroll-view>
+</view>
+<view class="view_content">
+  <slot></slot>
+</view>
+

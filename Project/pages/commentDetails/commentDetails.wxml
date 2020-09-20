@@ -1,0 +1,90 @@
+<view class="view_review">
+  <view class="view_review_input">
+    <image class="image_icon" src="../../images/comment.png"></image>
+    <textarea focus="{{focus}}" value="{{commentContent}}" auto-height="true" class="input_review" bindinput="bindinputComment" placeholder="{{placeholder}}" fixed="true"></textarea>
+    <text class="text_send" bindtap="bindtapIssue">发布</text> 
+    <!-- class="image_send"></image> -->
+  </view>
+</view>
+
+<view class="view_dynamicState">
+  <view class="view_dynamicState_title">
+    <view class="view_dynamicState_headPortait">
+      <image style="width:100%;height:100%" src="{{dynamicState.headPortait}}"></image>
+    </view>
+    <view class="view_dynamicState_userInfo">
+      <view class="view_dynamicState_name">{{dynamicState.name}}</view>
+      <view class="view_dynamicState_dateTime">{{dateTime}}</view>
+    </view>
+  </view>
+  <view class="view_dynamicState_content">
+    <view class="view_dynamicState_text">{{dynamicState.content}}</view>
+    <view class="view_dynamicState_Image">
+      <image class="image_picture" bindtap="bindtapPreview" data-src="{{item}}" data-array="{{dynamicState.cloudImage}}" mode="aspectFill" src="{{item}}" wx:for="{{dynamicState.cloudImage}}" wx:key="id" wx:for-index="index" wx:for-item="item"></image>
+    </view>
+  </view>
+  <view class="view_dynamicState_foot" style="display:flex">
+    <view class="view_iconList">
+      <image class="image_praise_copy" bindtap="bindtapLike" src="{{isLike?'../../images/praise_action.png':'../../images/praise.png'}}"></image>
+      <text>{{likeSum}}</text>
+    </view>
+    <view class="view_iconList" bindtap="bindtapFocus">
+      <image class="image_discuss" src="../../images/discuss.png" ></image>
+      <text>{{commentNum}}</text>
+    </view>
+    <view  class="view_iconList">
+      <image class="image_collect" bindtap="bindtapCollect" src="{{isCollect?'../../images/collect_action.png':'../../images/collect.png'}}"></image>
+    </view>
+    <label for="btn_share" class="view_iconList">
+      <image class="image_share" src="../../images/share.png"></image>
+    </label>
+    <button open-type="share" style="display:none" id="btn_share"></button>
+  </view>
+  <view>
+    <view wx:if="{{likeUserHeadPortait.length!=0}}" class="view_dynamicState_foot">
+      <view class="view_user_image" wx:if="{{likeUserHeadPortait.length<=10}}" wx:for="{{likeUserHeadPortait}}" wx:key="id" wx:for-index="index" wx:for-item="item">
+        <image class="image_user" src="{{item}}"></image>
+      </view>
+      <view class="text_user">等{{likeSum}}人点赞</view>
+    </view>
+    <view wx:else class="view_dynamicState_foot">
+      <view class="text_user">还没有点赞哟~</view>
+    </view>
+  </view>
+</view>
+<view class="view_comment">
+  <view class="view_comment_title">
+    <view class="view_comment_box">
+      <view class="view_comment_all" space="nbsp">全部评论  {{commentNum}}</view>
+    </view>
+  </view>
+  <view class="view_comment_content" wx:for="{{comments}}" wx:key="id" wx:index="index" wx:item="item">
+    <view class="view_comment_box">
+      <view class="view_comment_box_title">
+        <view class="view_comment_box_headPortait">
+          <image style="width:100%;height:100%" src="{{userInfos[index][0].headPortait}}"></image>
+        </view>
+        <view class="view_comment_box_userInfo">
+          <view class="view_comment_box_name">{{userInfos[index][0].name}}</view>
+          <view class="view_comment_box_dateTime">{{commentDateTimes[index]}}</view>
+          <view class="view_comment_box_text" bindtap="bindtapFocus" data-index="{{index}}">{{item.comment.content}}</view>
+          <view wx:for="{{item.reviews}}" wx:key="id" wx:for-index="i" wx:for-item="list">
+            <view class="view_comment_box_reply">
+              <view class="view_comment_box_reply_title">
+                <view class="view_comment_box_reply_name">{{list.userInfos[0].name}}</view>
+                <view class="view_comment_box_reply_who">回复{{list.name}}</view>
+                <view class="view_comment_box_reply_time">{{list.dateTime}}</view>
+              </view>
+            </view>
+            <view class="view_comment_box_reply_text" bindtap="bindtapReply" data-uid="{{list.review.uid}}" data-userName="{{list.userInfos[0].name}}" data-id="{{list.review._id}}">{{list.review.content}}</view>
+          </view>
+        </view>
+        <view class="view_comment_box_praise" bindtap="bindtapCommentPraise" data-index="{{index}}">
+          <image src="{{commentLike[index]?'../../images/zan_action.png':'../../images/zan.png'}}" class="image_praise"></image>
+          <text space="nbsp" class="text_zanNum"> {{commentLikeNums[index]}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="width:100%;height:100px"></view>

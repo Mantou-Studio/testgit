@@ -1,0 +1,10 @@
+<view class="view_male">
+  <view class="view_male_box" bindtap="clickMale">
+    <image class="image_male" src="../../images/male.png"></image>
+  </view>
+</view>
+<view class="view_female">
+  <view class="view_female_box" bindtap="clickFemale">
+    <image class="image_female" src="../../images/female.png"></image>
+  </view>
+</view>

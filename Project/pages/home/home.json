@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navtab":"../components/navtab/navtab",
+    "progressBar":"../components/progressBar/progressBar"
+  },
+  "enablePullDownRefresh":true,
+  "navigationBarTitleText": "校园小唤·校园广场"
+}

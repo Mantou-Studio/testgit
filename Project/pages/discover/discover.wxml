@@ -1,0 +1,41 @@
+<view>
+  <swiper class="swiper" autoplay="true" circular="true">
+    <swiper-item wx:for="{{imageList}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+      <image class="swiper_image" mode="scaleToFill" src="{{item.src}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="view_tools">
+  <view class="view_tools_title">实用工具</view>
+  <scroll-view scroll-x="true" class="view_horizontal">
+    <view class="view_box" bindtap="bindtapMore">
+      <view class="view_image">
+        <image class="image_icon" src="../../images/more.png"></image>
+      </view>
+      <view class="view_text">敬请期待</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="view_campusLife">
+  <view class="view_tools_title">校园生活</view>
+  <scroll-view scroll-x="true" class="view_horizontal">
+    <view class="view_box"  bindtap="bindtapMore">
+      <view class="view_image">
+        <image class="image_icon" src="../../images/more.png"></image>
+      </view>
+      <view class="view_text">敬请期待</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="view_study">
+  <view class="view_tools_title">周边商城</view>
+  <scroll-view scroll-x="true" class="view_horizontal">
+    <view class="view_box"  bindtap="bindtapMore">
+      <view class="view_image">
+        <image class="image_icon" src="../../images/more.png"></image>
+      </view>
+      <view class="view_text">敬请期待</view>
+    </view>
+  </scroll-view>
+</view>
+

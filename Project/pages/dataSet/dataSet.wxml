@@ -1,0 +1,90 @@
+<view class="view_content"> 
+  <view class="view_name_box">
+    <view class="view_name_tab">
+      <text>昵称</text>
+    </view>
+    <view class="view_name">
+      <input maxlength="8" bindblur="bindBlurName" class="input_name" type="text" value="{{name}}"></input>
+    </view>
+  </view>
+  <view bindtap="replaceHeadPortait" class="view_headPortait_box">
+    <view class="view_headPortait_tab">
+      <text>用户头像</text>
+    </view>
+    <view class="view_headPortait">
+      <view class="image_headPortait">
+        <image class="image_headPortait" src="{{headPortait}}"></image>
+      </view>
+      <view class="image_headPortait">
+        <image class="image_camera" src="../../images/camera.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="view_sex_box">
+     <view class="view_sex_tab">
+      <text>性别</text>
+    </view>
+    <view class="view_sex">
+      <picker bindchange="bindSexChange" value="{{index}}" range="{{array}}">
+        <input class="input_sex" type="text" value="{{sex}}"></input>
+      </picker>
+    </view>
+  </view>
+  <view class="view_phone_box">
+      <view class="view_phone_tab">
+      <text>手机号</text>
+    </view>
+    <view class="view_phone">
+      <input bindblur="bindBlurPhone" placeholder="未填写" class="input_phone" type="text" value="{{displayPhone}}"></input>
+    </view>
+  </view>
+  <view class="view_qq_box">
+      <view class="view_qq_tab">
+      <text>QQ</text>
+    </view>
+    <view class="view_qq">
+      <input bindblur="bindBlurQQ" placeholder="未填写" class="input_qq" type="text" value="{{qq}}"></input>
+    </view>
+  </view>
+  <view class="view_age_box">
+      <view class="view_age_tab">
+      <text>年龄</text>
+    </view>
+    <view class="view_age">
+      <picker mode="date" header-text="设置出生日期" bindchange="bindDateChange">
+        <input placeholder="未填写" disabled="false" class="input_age" type="text" value="{{settingAge}}"></input>
+      </picker>
+    </view>
+  </view>
+  <view class="view_authentication_box">
+    <view class="view_authentication_tab">
+      <text>学生认证</text>
+    </view>
+    <view class="view_authentication">
+      <input disabled="false" placeholder="{{isAuthentication?'已认证':'未认证'}}" class="input_authentication" type="text"></input>
+    </view>
+  </view>
+   <view class="view_sign_box">
+    <view class="view_sign_tab">
+      <text>人生格言</text>
+    </view>
+    <view class="view_sign">
+      <input bindinput="bindInputSign" value="{{sign}}" class="text_sign" maxlength="15" type="text" placeholder="未填写"></input>
+    </view>
+  </view>
+</view>
+<view class="view_save_content" bindtap="bindSaveData" >
+  <text>保存修改</text>
+</view>
+<view class="view_about_content">
+  <view class="view_support_box">
+    <view class="view_support_tab">
+      <text>支持与分享</text>
+    </view>
+  </view>
+  <view class="view_about_box">
+    <view class="view_about_tab">
+      <text>关于与帮助</text>
+    </view>
+  </view>
+</view>

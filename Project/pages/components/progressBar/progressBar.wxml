@@ -1,0 +1,3 @@
+<view class="view_box"> 
+  <image class="image_loading" src="../../../images/progress.png"></image>
+</view>

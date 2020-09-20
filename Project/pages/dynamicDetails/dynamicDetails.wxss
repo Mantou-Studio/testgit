@@ -1,0 +1,243 @@
+page{
+  background-color: #f2f2f2;
+}
+.view_title{
+  width: 100%;
+  height: 200px;
+  background-color: brown;
+}
+.view_bg{
+  width: 100%;
+  height: 30%;
+  background-color: #f8cf1d;
+}
+.view_headPortait{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 4px solid #f2f2f2;
+  left: 3%;
+  top:5%;
+  overflow: hidden;
+}
+.image_headPortait{
+  width: 100%;
+  height: 100%;
+}
+.view_info{
+  width: 100%;
+  height: 70%;
+  background-color: #fff;
+}
+.view_info_first{
+  width: 100%;
+  height: 40%;
+}
+.view_attention{
+  width: 43%;
+  height: 70%;
+  background-color: #f8cf1d;
+  position: relative;
+  left: 38%;
+  top:15%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #f2f2f2;
+}
+.view_report{
+  width: 14%;
+  height: 70%;
+  position: relative;
+  top:15%;
+  float: right;
+  background-color: #393939;
+  border-radius: 3px;
+  overflow: hidden;
+  right: 2.5%;
+}
+.view_report_image{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.image_report{
+  margin-top: 3%;
+  width: 40%;
+  height: 90%;
+}
+.view_report_text{
+  width: 100%;
+  height: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f2;
+}
+.view_info_second{
+  width: 100%;
+  height: 40%;
+}
+.view_name{
+  width:  60%;
+  height: 70%;
+  top:30%;
+  position: relative;
+  float: left;
+}
+.text_name{
+  width: 90%;
+  height: auto;
+  margin-left: 10%;
+  position: absolute;
+  top:40%;
+  font-weight: 800;
+  color: #393939;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 19px;
+}
+.view_info_thirdly{
+  width: 100%;
+  height: 20%;
+}
+.view_authentication{
+  width: 88%;
+  height: 100%;
+  margin-left: 6%;
+  line-height: 30px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.view_personalData{
+  width: 40%;
+  height: 100%;
+  float: left;
+  font-size: 15px;
+}
+.image_data{
+  width:30px;
+  height: 30px;
+  position: relative;
+  top: 25px;
+}
+.text_data{
+  position: relative;
+  top:15px;
+}
+.view_dynamicState_info{
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 2px;
+  display: flex;
+}
+.view_dynamicState_list{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.text_num{
+  color: #c9c9c9;
+}
+.text_tab{
+  color: #5e5b5b;
+}
+
+
+.view_content{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-top: 2px;
+  position: relative;
+  padding-top: 10px;
+}
+.view_dynamicState_title{
+  width: 94%;
+  height: 50px;
+  margin-left: 3%;
+}
+.view_dynamicState_headPortait{
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  float: left;
+}
+.image_dynamicState_headPortait{
+  width: 100%;
+  height: 100%;
+}
+.view_dynamicState_userInfo{
+  width: 70%;
+  height: 50px;
+  float: left;
+  margin-left: 5px;
+}
+.view_dynamicState_name{
+  width: 100%;
+  height: 50%;
+  font-size: 19px;
+  font-weight: 800;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.view_dynamicState_time{
+  width: 100%;
+  height: 50%;
+  font-size: 12px;
+  line-height: 25px;
+}
+.view_dynamicState_content{
+  width: 94%;
+  height: auto;
+  margin-left: 3%;
+  margin-top: 10px;
+}
+.view_dynamicState_text{
+  width: 100%;
+  height: auto;
+  word-wrap:break-word;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+.view_dynamicState_image{
+  width: 101%;
+  height: auto;
+}
+.image_picture{
+  width: 32.3%;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  display: inline-block;
+  margin-right: 1%;
+  background-color: rgb(243, 243, 243);
+}
+.view_dynamicState_foot{
+  width: 94%;
+  height: 60px;
+  margin-left: 3%;
+  border-top: 1px solid #f2f2f2;
+  display: flex;
+}
+.view_iconList{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.image_praise,.image_discuss,.image_collect,.image_share{
+  width: 30px;
+  height: 30px;
+}

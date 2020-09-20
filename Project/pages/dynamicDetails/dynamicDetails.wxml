@@ -1,0 +1,83 @@
+<view class="view_title">
+  <view class="view_bg"></view>
+  <view class="view_headPortait">
+    <image class="image_headPortait" src="{{headPortait}}"></image>
+  </view>
+  <view class="view_info">
+    <view class="view_info_first">
+      <view bindtap="bindtapAttention" wx:if="{{isShow}}" style="{{isAttention?'background:#dedede;color:#595959':'background-color: #f8cf1d;color: #f2f2f2;'}}" class="view_attention">{{isAttention?'已关注':'关注'}}</view>
+      <view  wx:if="{{isShow}}"  class="view_report">
+        <view class="view_report_image">
+          <image class="image_report" src="../../images/report.png"></image>
+        </view>
+        <view class="view_report_text">举报</view>
+      </view>
+    </view>
+    <view class="view_info_second">
+      <view class="view_name">
+        <text class="text_name">{{name}}</text>
+      </view>
+      <view class="view_personalData">
+        <image class="image_data" src="../../images/data.png"></image>
+        <text class="text_data">个人资料></text>
+      </view>
+    </view>
+    <view class="view_info_thirdly">
+      <view class="view_authentication">
+        <text>{{isAuthentication?address:'未认证'}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="view_dynamicState_info">
+  <view class="view_dynamicState_list">
+    <text class="text_num">{{praiseNum}}</text>
+    <text space="nbsp" class="text_tab"> 获赞</text>
+  </view>
+  <view class="view_dynamicState_list">
+    <text class="text_num">{{attentionNum}}</text>
+    <text space="nbsp" class="text_tab"> 关注</text>
+  </view>
+  <view class="view_dynamicState_list">
+    <text class="text_num">{{dynamicStateNum}}</text>
+    <text space="nbsp" class="text_tab"> 动态</text>
+  </view>
+</view>
+<view class="view_content" wx:for="{{dynamicStates}}" wx:key="id" wx:for-index="index" wx:for-item="item" wx:if="{{index<displayNum*currentPageSize}}">
+  <view class="view_dynamicState_title">
+    <view class="view_dynamicState_headPortait">
+      <image class="image_dynamicState_headPortait" src="{{item.headPortait}}"></image>
+    </view>
+    <view class="view_dynamicState_userInfo">
+      <view class="view_dynamicState_name">
+        <text>{{item.name}}</text>
+      </view>
+      <view class="view_dynamicState_time">
+        <text>{{dateTimes[index]}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="view_dynamicState_content">
+    <view class="view_dynamicState_text">{{item.content}}</view>
+    <view class="view_dynamicState_image">
+      <image bindtap="bindtapPreview" data-array="{{item.cloudImage}}" data-src="{{list}}" mode="aspectFill" class="image_picture" src="{{list}}" wx:for="{{item.cloudImage}}" wx:for-item="list" wx:key="*this"></image>
+    </view>
+  </view>
+  <view class="view_dynamicState_foot">
+    <view class="view_iconList"  bindtap="bindtapLike" data-index="{{index}}" >
+      <image class="image_praise" src="{{likes[index]?'../../images/praise_action.png':'../../images/praise.png'}}"></image>
+      <text>{{likeSum[index]}}</text>
+    </view>
+    <view class="view_iconList">
+      <image class="image_discuss" src="../../images/discuss.png" ></image>
+      <text>0</text>
+    </view>
+    <view bindtap="bindtapCollect" data-index="{{index}}" class="view_iconList">
+      <image class="image_collect" src="{{collects[index]?'../../images/collect_action.png':'../../images/collect.png'}}"></image>
+    </view>
+    <label for="btn_share" class="view_iconList">
+      <image class="image_share" src="../../images/share.png"></image>
+    </label>
+    <button open-type="share" style="display:none" id="btn_share"></button>
+  </view>
+</view>

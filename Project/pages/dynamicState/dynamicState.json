@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "progressBar":"../components/progressBar/progressBar"
+  },
+  "navigationBarTitleText": "发布动态"
+}

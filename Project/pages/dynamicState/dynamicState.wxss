@@ -1,0 +1,177 @@
+page{
+  background-color: #f2f2f2;
+}
+.view_box{
+  width: 94%;
+  min-height: 250px;
+  background-color: #fff;
+  margin-left: 3%;
+  margin-top: 3%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.view_content{
+  width: 94%;
+  margin-left: 3%;
+  min-height: 200px;
+  margin-top: 3%;
+}
+.text_content{
+  width: 100%;
+  min-height: 200px;
+  display: block;
+}
+.view_foot{
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #dedede;
+}
+.view_addImage,.view_issue{
+  width: 60%;
+  height: 50px;
+  float: left;
+}
+.view_issue{
+  width: 40%;
+}
+.view_addImage_block,.view_issue_block{
+  width: 90%;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 5%;
+}
+.image_pic,.image_add,.image_upload{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.text_uploading{
+  font-size: 13px;
+  color: #f8cf1d;
+  position: relative;
+  top:-5px;
+}
+.view_issue_block{
+  width: 65%;
+  min-width: 90px;
+  margin-left: 20%;
+}
+.view_imageBox{
+  width: 96%;
+  height: auto;
+  margin-top: 2%;
+  margin-left: 3%;
+  background-color: royalblue;
+}
+.view_imageList{
+  width: 31%;
+  height: 120px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.image_list{
+  width: 100%;
+  height:100%;
+}
+.view_tab{
+  width: 94%;
+  height: auto;
+  background-color: #fff;
+  margin-left: 3%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.view_tab_title{
+  width:100%;
+  height: 40px;
+}
+.text_title{
+  position: relative;
+  left: 20px;
+  top:5px;
+  font-weight: 800;
+}
+.image_issue{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 20px;
+  top:2px;
+}
+.view_tab_content{
+  width: 100%;
+  height: auto;
+}
+.image_tab{
+  width: 30%;
+  height: 40px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  margin-left: 2.5%;
+}
+.view_anonymity{
+  width: 94%;
+  height: 40px;
+  margin-left: 3%;
+  margin-top:2%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.view_anonymity_text{
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #f8cf1d;
+  float: left;
+  margin-left: 20px;
+}
+.view_anonymity_switech_box{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  float: right;
+}
+.view_anonymity_switch{
+  width: 40px;
+  height: 20px;
+  margin-top: 10px;
+  background-color: #8799a3;
+  border-radius: 10px;
+}
+.view_circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0px 7px #000000;
+  transition: 0.5s;
+}
+.view_circle_action{
+  transition: 0.5s;
+  transform: translateX(20px);
+}
+.view_anonymity_switch_action{
+  transition: 0.5s;
+  background-color: #f8cf1d;
+}
+.view_loading{
+  width: 100%;
+  height: 100vmax;
+  position: absolute;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pro_loading{
+  position: absolute;
+  bottom: 50%;
+  left:50%;
+  transform: translateY(50%) translateX(-50%);
+}
+

@@ -1,0 +1,38 @@
+<view class="view_position">
+  <view class="view_position_child" bindtap="handleissue">
+    <image src="../../images/add_two.png" class="view_add"></image>
+  </view>
+</view>
+<view class="view_title">
+  <view class="view_search_box">
+    <view class="view_search_image">
+      <image style="width:100%;height:100%" src="../../images/search.png" mode="aspectFill"></image>
+    </view>
+    <view class="view_search_input">
+      <input type="text" placeholder="搜索闲置物品" style="width:100%;height:100%"></input>
+    </view>
+    <view class="view_search_button">搜索</view>
+  </view>
+  <view class="view_classify_box">
+    <view class="view_type_classify">
+      <view class="view_type_box">
+        <picker bindchange="bindchangeType" range="{{typeclass}}" value="{{index}}">
+          <view class="view_text" style="float:left">{{type}}</view>
+          <view class="view_icon" style="float:right">
+            <image src="../../images/next.png" style="width:100%;height:100%"></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="view_time_classify">
+      <view class="view_time_box">
+         <picker bindchange="bindchangeTime" range="{{timeclass}}" value="{{index}}">
+          <view class="view_text" style="float:left">{{time}}</view>
+          <view class="view_icon" style="float:right">
+            <image src="../../images/next.png" style="width:100%;height:100%"></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>

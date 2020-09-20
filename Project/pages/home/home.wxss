@@ -1,0 +1,159 @@
+page{
+  background: #f2f2f2;
+  -webkit-overflow-scrolling : touch;
+}
+.swiper{
+  width: 100vm;
+  height: 250px;
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.swiper_image{
+  width: 100%;
+  height: 250px;
+}
+.view_padding{
+  width: 100vm;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  top: -40px;
+}
+.view_pro{
+  z-index: 100;
+  width: 100vm;
+  height: auto;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.view_btnbox{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0px 15px #f4ea2a;
+}
+.image_add{
+  width:60px;
+  height: 60px;
+}
+/* .view_dialog{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+/* .dialog_location{
+  position: absolute;
+  bottom:50%;
+  transform: translateY(50%);
+  width: 94%;
+  height: 250px;
+  margin-left: 3%;
+} */
+
+
+
+.view_listBox{
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+.view_title{
+  width: 100%;
+  height: 60px;
+}
+.view_headPortrait{
+  width: 44px;
+  height: 44px;
+  margin-left: 3%;
+  position: relative;
+  top: 8px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  float: left;
+  overflow: hidden;
+}
+.headPortrait{
+  width: 100%;
+  height:100%
+}
+.view_titleContent{
+  width: 70%;
+  height: 40px;
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.view_name{
+  width: 80%;
+  height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}
+.view_info{
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(99, 98, 98);
+}
+.view_content{
+  width: 100%;
+  height: auto;
+}
+.view_text{
+  width: 96%;
+  height: auto;
+  margin-left: 3%;
+  margin-bottom: 10px;
+  position: relative;
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+  white-space: pre-wrap;
+}
+.view_Image{
+  width: 100%;
+  height: auto;
+}
+.view_imageList{
+  width: 29.3%;
+  height: 120px;
+  border-radius: 20px;
+  margin-left: 3%;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: rgb(243, 243, 243);
+}
+.view_foot{
+  width: 94%;
+  height: 60px;
+  border-top: 1px solid #dedede;
+  margin-left: 3%;
+  display: flex;
+}
+.view_iconList{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.image_praise,.image_discuss,.image_collect,.image_share{
+  width: 30px;
+  height: 30px;
+}
